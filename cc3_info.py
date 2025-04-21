@@ -17,15 +17,6 @@ __copyright__ = "Copyright (c) 2023 Claudia"
 __license__ = "Python"
 
 
-# /// script
-# requires-python = ">=3.11"
-# dependencies = [
-#     "pycountry>=24.2.0",
-#     "requests>=2.31.0",
-#     "python-dotenv>=1.0.0",
-# ]
-# ///
-
 import importlib.metadata
 import argparse
 import json
