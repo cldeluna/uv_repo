@@ -26,7 +26,7 @@ __license__ = "Python"
 # ]
 # ///
 
-
+import pkg_resources
 import argparse
 import json
 import time
