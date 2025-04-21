@@ -324,6 +324,10 @@ def main():
     print(f"\tPython version: {'.'.join(map(str, sys.version_info[:3]))}")
     print(f"\tVirtual environment path: {sys.prefix}\n")
 
+    # For all installed packages in the environment
+    for package in pkg_resources.working_set:
+        print(f"\t{package.project_name}=={package.version}")
+
 
     # Load environment variables
     load_env_variables()
