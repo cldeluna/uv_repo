@@ -26,7 +26,7 @@ __license__ = "Python"
 # ]
 # ///
 
-import pkg_resources
+import importlib.metadata
 import argparse
 import json
 import time
@@ -324,9 +324,9 @@ def main():
     print(f"\tPython version: {'.'.join(map(str, sys.version_info[:3]))}")
     print(f"\tVirtual environment path: {sys.prefix}\n")
 
-    # For all installed packages in the environment
-    for package in pkg_resources.working_set:
-        print(f"\t{package.project_name}=={package.version}")
+    # For all installed packages
+    for dist in importlib.metadata.distributions():
+        print(f"\t{dist.metadata['Name']}=={dist.version}")
 
 
     # Load environment variables
