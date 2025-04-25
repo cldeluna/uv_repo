@@ -8,6 +8,8 @@ wheels/
 .env
 .idea
 *.pyc
+*.snagx
+*.JPG
 
 # Virtual environments
 .venv
