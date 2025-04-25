@@ -29,7 +29,7 @@ source $HOME/.local/bin/env
 uv --version
 ```
 
-<img src="/Users/claudiadeluna/Indigo Wire Networks Dropbox/Claudia de Luna/scripts/python/2025/uv_script/images/macos_uv_install.png" alt="macos_uv_install" style="zoom:60%;" />
+<img src="images/macos_uv_install.png" alt="macos_uv_install" style="zoom:60%;" />
 
 ### Windows (PowerShell)
 
@@ -39,7 +39,7 @@ Install uv using PowerShell
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-<img src="/Users/claudiadeluna/Indigo Wire Networks Dropbox/Claudia de Luna/scripts/python/2025/uv_script/images/uv_install_Capture2.png" alt="uv_install_Capture" style="zoom:40%;" />
+<img src="images/uv_install_Capture2.png" alt="uv_install_Capture" style="zoom:40%;" />
 
 When you install `uv` on **Windows using PowerShell**, the installer typically adds the `uv` binary to your user’s `AppData\Local\uv\bin` directory and updates the `Path` environment variable to add that directory.  However, **this change won't take effect in the same terminal session unless you manually update the `PATH` variable**.
 
